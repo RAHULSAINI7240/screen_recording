@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Recording with Timer Reset</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="dropdown">
+        <button id="toggleDropdown">Open Recorder</button>
+        <div id="dropdown" class="dropdownContent">
+          <button class="closeBtn" id="closePopup">&times;</button>
+
+          <div class="content">
+            <h3>Screen Recorder</h3>
+
+            <div style="display: flex; gap: 45px">
+              <button id="recordButton" class="btn">Start Recording</button>
+              <div class="recording-status hidden">
+                <span class="red-dot"></span>
+                <span id="timer">00:00</span>
+              </div>
+            </div>
+            <!-- <video id="recordedVideo" controls class="hidden"></video> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
